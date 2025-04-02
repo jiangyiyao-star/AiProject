@@ -1,0 +1,49 @@
+.indexPage {
+  background: #A2C7D7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+  .title {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .subTitle {
+    color: #F0F0F0;
+    font-size: 36px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .enterBtn {
+    width: 70%;
+    max-width: 250px;
+    background-color: #8a74af !important; // 淡紫色
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .headerImage {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+  }
+
+  .author {
+    color: #333;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
