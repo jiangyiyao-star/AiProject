@@ -1,8 +1,8 @@
-import { View } from '@tarojs/components'
+import {View} from '@tarojs/components'
 import GlobalFooter from "../../components/GlobalFooter/GlobalFooter"
-import { AtButton, AtRadio } from 'taro-ui'
+import {AtButton, AtRadio} from 'taro-ui'
 import questions from '../../data/questions.json'
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 import './doQuestion.scss'
 import Taro from "@tarojs/taro"
 
@@ -71,13 +71,15 @@ export default () => {
           circle
           disabled={!currentAnswer}
           onClick={() => {
+            Taro.setStorageSync('answerList', answerList);
             Taro.navigateTo({
-              url: "/pages/result/index",
-            })
+              url: "/pages/result/result",
+            });
           }}
         >
           查看结果
         </AtButton>
+
       )}
       {current > 1 && (
         <AtButton
@@ -91,7 +93,7 @@ export default () => {
           上一题
         </AtButton>
       )}
-      <GlobalFooter />
+      <GlobalFooter/>
     </View>
   )
 }
